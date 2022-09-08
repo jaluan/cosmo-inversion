@@ -13,8 +13,8 @@ function [gm] = forward_bedrockvJ1_mn4_BeAlClNe(up,model,CNprop)
 
 % Written by David Lundbek Egholm
 % Modified by Jane Lund Andersen to also i) include [36Cl, 21Ne],
-% ii) handle alternate climate inputs, and iii) add a slope or step to the 
-% glaciation threshold (emergence)
+% ii) handle alternate climate inputs, and iii) add an (optional) slope or 
+% step to the glaciation threshold (emergence)
 
 %% model parameters
 

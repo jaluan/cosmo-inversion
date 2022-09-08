@@ -8,8 +8,8 @@ function compile_results_mn5(ss)
 
 % Written by David Lundbek Egholm, Aarhus University
 % Modified by Jane Lund Andersen to also i) include [36Cl, 21Ne],
-% ii) handle alternate climate inputs, and iii) add an (optional) slope or step to the 
-% glaciation threshold (emergence)
+% ii) handle alternate climate inputs, and iii) add an (optional) slope or 
+% step to the glaciation threshold (emergence)
 
 close all;
 addpath('Functions','ClimateCurves')
