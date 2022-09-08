@@ -9,17 +9,23 @@ better, especially at high latitudes.
 
 Primary functions
 1. compile_mn_data.m: Reads metadata and multi-cosmogenic nuclide data for a set of samples and saves data structure including production parameters in .mat format.
+
 2. bedrockMCvJ1_mn5.m: Performs inversion for one or more samples. If multiple samples are provided they are assumed to have the same exposure history while the exhumation history is allowed to vary between samples. To test performance reduce number of walkers/number of models per walker in the code. To invert samples used in main manuscript call this function in a for-loop (consider parallelising):
-	for i=1:34
-		bedrockMCvJ1_mn5(i,2,0,1); %Heimefrontfjella samples
-	end
-	for i=1:29
-		bedrockMCvJ1_mn5(i,2,0,2); %Jutulstraumen samples
-	end
-	Output is saved to the folder models/MDML
+
+	for i=1:34, bedrockMCvJ1_mn5(i,2,0,1); end %Heimefrontfjella samples
+	
+	
+	for i=1:29,bedrockMCvJ1_mn5(i,2,0,2); end %Jutulstraumen samples
+	
+	
+ Output is saved to the folder models/MDML
+	
 3-6. forward_bedrockvJ1_mn4_BeAl_xx.m: Set of four m-files to forward calculate 		nuclide concentrations in a sample given the exposure and exhumation history 		parameters. If ismember lines are uncommented only one file is needed to calculate 	all four nuclides, but the code will be very slow.
+
 7. compile_results_mn5.m: Compiles inversion model results for all samples from each site for use in plotting scripts.
+
 8-9. MDMLx_elevation_fig.m: These two m-files read and plot compiled results for 		Heimefrontfjella (MDML1) and Jutulstraumen (MDML2) ordered by elevation above 	sea level.
+
 10. makereportJ_mn5.m: Plots information about walkers, parameter distributions, model-data fit, and saves report as pdf in models/MDML/reports folder.
 
 Contents of subfolders
