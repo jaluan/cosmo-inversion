@@ -1,6 +1,6 @@
 # cosmo-inversion
 MCMC inversion code for cosmogenic nuclide applications
-This MCMC inversion code generates the model output presented and discussed in the manuscript: Million-year ice dynamics in East Antarctica by Andersen et al., submitted to xx on xx.09.2022.
+This MCMC inversion code generates the model output presented and discussed in the manuscript: Million-year ice dynamics in East Antarctica by Andersen et al.
 
 Note 1: At present the code is set up to handle 10Be and 26Al (mandatory), while 36Cl and 21Ne are optional
 
